@@ -365,7 +365,7 @@
     <!-- Gallery Section -->
     <section id="gallery" class="gallery-section container">
         <h2 class="section-title">GALLERY MOMENTS</h2>
-        <p class="section-subtitle">Koleksi momen terbaik dari Kivotos Academy</p>
+        <p class="section-subtitle">Koleksi foto bersama dari setiap murid Kivotos Academy</p>
 
         <div class="gallery-grid">
             <!-- Gallery Item 1 -->
@@ -534,6 +534,7 @@
     <script src="ba-script.js"></script>
 </body>
 </html>
+
 
 
 
