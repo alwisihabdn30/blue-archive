@@ -331,7 +331,7 @@
                     <div class="waifu-rank-landscape">#2</div>
                 </div>
                 <div class="waifu-content-landscape">
-                    <h3 class="waifu-name-landscape">HINA KUROKAWA</h3>
+                    <h3 class="waifu-name-landscape">SORASAKI HINA</h3>
                     <div class="waifu-school-landscape">GEHENNA</div>
                     <ul class="waifu-list-landscape">
                         <li>Sifat: dingin, serius, dan sangat berwibawa </li>
@@ -350,7 +350,7 @@
                     <div class="waifu-rank-landscape">#3</div>
                 </div>
                 <div class="waifu-content-landscape">
-                    <h3 class="waifu-name-landscape">MIKA KUROKAWA</h3>
+                    <h3 class="waifu-name-landscape">MISONO MIKA</h3>
                     <div class="waifu-school-landscape">TRINITY</div>
                     <ul class="waifu-list-landscape">
                         <li>Sifat: optimis, ceria, polos, dan mudah bergaul, tapi juga rapuh, impulsif</li>
@@ -534,5 +534,6 @@
     <script src="ba-script.js"></script>
 </body>
 </html>
+
 
 
