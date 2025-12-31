@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRT Special Academy - Blue Archive</title>
+    <link rel="icon" href="gambar/logo blue archive.jpeg" type="image/jpeg">
+    <style>
+        :root {
+            --school-color: #10b981; /* Emerald Green untuk SRT */
+        }
+    </style>
+    <link rel="stylesheet" href="school-style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="school-header">
+        <div class="header-container">
+            <h1 class="school-title">SRT SPECIAL ACADEMY</h1>
+            <a href="index.html" class="back-btn">← Kembali ke Lobby</a>
+        </div>
+    </header>
+
+    <!-- School Info Section -->
+    <section class="school-info-section">
+        <div class="info-container">
+            <div class="school-logo">
+                <img src="gambar/srt.jpg" alt="SRT Logo">
+            </div>
+            <div class="school-description">
+                <h3 class="subtitle">/// SPECIAL ACADEMY</h3>
+                <h2 class="school-name">SRT</h2>
+                <p class="description-text">
+                    SRT Special Academy adalah unit taktis khusus yang menangani misi-misi berisiko tinggi di Kivotos. 
+                    Anggota SRT dilatih dalam operasi khusus, penyelamatan sandera, dan penanganan situasi krisis. 
+                    Mereka adalah tim elite yang siap bergerak kapan saja dengan peralatan dan taktik terbaik. 
+                    Siswa-siswa SRT dikenal dengan kemampuan tempur luar biasa dan kerjasama tim yang solid.
+                </p>
+                <div class="stats-boxes">
+                    <div class="stat-box">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Total Siswa</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Strikers</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Special</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Students Grid Section -->
+    <section class="students-section">
+        <div class="students-container">
+            <!-- Student 1: Miyako (Swimsuit) -->
+            <div class="student-card">
+                <header class="student-header"><h2>Miyako (Swimsuit)</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="1">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="1">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="1">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="1">
+                    <img src="srt/Miyako_(Swimsuit).png" alt="Miyako (Swimsuit)" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="1">
+                    <img src="srt/art-l2d/miyako-art.jpeg" alt="Miyako (Swimsuit) Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="1">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="1">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="1">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="1">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="srt/chibi/tinyvid_optimized_2_Miyako_(Swimsuit)-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="1">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="srt/art-l2d/Memorial_Lobby_Miyako_(Swimsuit).mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Miyako (Swimsuit) Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">SRT</td><td class="info-value">Tank/Front</td></tr>
+                    <tr><td class="info-label">Attack Type</td><td class="damage-type explosive">Explosive</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type heavy">Heavy</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Striker</td></tr>
+                </table>
+            </div>
+
+            <!-- Student 2: Saki (Swimsuit) -->
+            <div class="student-card">
+                <header class="student-header"><h2>Saki (Swimsuit)</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="2">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="2">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="2">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="2">
+                    <img src="srt/Saki_(Swimsuit).png" alt="Saki (Swimsuit)" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="2">
+                    <img src="srt/art-l2d/saki-art.jpeg" alt="Saki (Swimsuit) Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="2">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="2">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="2">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="2">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="srt/chibi/tinyvid_optimized_3_Saki_(Swimsuit)-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="2">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="srt/art-l2d/Memorial_Lobby_Saki_(Swimsuit).mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Saki (Swimsuit) Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">SRT</td><td class="info-value">Support/Back</td></tr>
+                    <tr><td class="info-label">Attack Type</td><td class="damage-type explosive">Explosive</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type heavy">Heavy</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Striker</td></tr>
+                </table>
+            </div>
+
+            <!-- Student 3: Moe (Swimsuit) -->
+            <div class="student-card">
+                <header class="student-header"><h2>Moe (Swimsuit)</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="3">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="3">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="3">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="3">
+                    <img src="srt/Moe_(Swimsuit).png" alt="Moe (Swimsuit)" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="3">
+                    <img src="srt/art-l2d/moe-art.jpeg" alt="Moe (Swimsuit) Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="3">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="3">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="3">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="3">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="srt/chibi/tinyvid_optimized_1_Moe_(Swimsuit)-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="3">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="srt/art-l2d/Memorial_Lobby_Moe_(Swimsuit).mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Moe (Swimsuit) Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">SRT</td><td class="info-value">Attacker/Middle</td></tr>
+                    <tr><td class="info-label">Attack Type</td><td class="damage-type sonic">Sonic</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type special">Special</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Striker</td></tr>
+                </table>
+            </div>
+
+            <!-- Student 4: Miyu -->
+            <div class="student-card">
+                <header class="student-header"><h2>Miyu</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="4">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="4">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="4">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="4">
+                    <img src="srt/Miyu.png" alt="Miyu " class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="4">
+                    <img src="srt/art-l2d/miyu-art.jpeg" alt="Miyu Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="4">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="4">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="4">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="4">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="srt/chibi/tinyvid_optimized_4_Miyu-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="4">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="srt/art-l2d/Memorial_Lobby_Miyu.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Miyu Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">SRT</td><td class="info-value">Support/Back</td></tr>
+                    <tr><td class="info-label">Attack Type</td><td class="damage-type piercing">Penetration</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type light">Light</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Striker</td></tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="school-footer">
+        <div class="footer-content">
+            <p class="footer-school">SRT SPECIAL ACADEMY</p>
+            <p class="footer-title">Character - Blue Archive</p>
+            <p class="footer-copyright">© 2025 Alwi Sihabudin. izin kepada ©Nexon Games, Yostar.</p>
+        </div>
+    </footer>
+
+    <script src="school-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanhaijing Senior Secondary School - Blue Archive</title>
+    <link rel="icon" href="gambar/logo blue archive.jpeg" type="image/jpeg">
+    <style>
+        :root {
+            --school-color: #dc2626; /* Red untuk Shanhaijing */
+        }
+    </style>
+    <link rel="stylesheet" href="school-style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="school-header">
+        <div class="header-container">
+            <h1 class="school-title">SHANHAIJING SENIOR SECONDARY SCHOOL</h1>
+            <a href="index.html" class="back-btn">← Kembali ke Lobby</a>
+        </div>
+    </header>
+
+    <!-- School Info Section -->
+    <section class="school-info-section">
+        <div class="info-container">
+            <div class="school-logo">
+                <img src="gambar/Shanhaijing.jpg" alt="Shanhaijing Logo">
+            </div>
+            <div class="school-description">
+                <h3 class="subtitle">/// SENIOR SECONDARY SCHOOL</h3>
+                <h2 class="school-name">SHANHAIJING</h2>
+                <p class="description-text">
+                    Shanhaijing Senior Secondary School adalah sekolah yang terinspirasi dari mitologi dan budaya Tiongkok kuno.
+                    Sekolah ini memiliki arsitektur bergaya oriental dengan nilai-nilai tradisional yang kuat.
+                    Siswa-siswa Shanhaijing dikenal dengan kemampuan bertarung yang elegan, menggabungkan seni bela diri 
+                    dengan teknologi modern. Mereka menjunjung tinggi kehormatan dan loyalitas kepada sekolah.
+                </p>
+                <div class="stats-boxes">
+                    <div class="stat-box">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Total Siswa</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Strikers</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Special</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Students Grid Section -->
+    <section class="students-section">
+        <div class="students-container">
+            <!-- Student 1: Shun (Kid) -->
+            <div class="student-card">
+                <header class="student-header"><h2>Shun (Kid)</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="1">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="1">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="1">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="1">
+                    <img src="shanhaijing/Shun_(Kid).png" alt="Shun (Kid)" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="1">
+                    <img src="shanhaijing/art+l2d/shun kid-art.jpeg" alt="Shun (Kid) Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="1">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="1">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="1">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="1">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="shanhaijing/chibi/tinyvid_optimized_5_Shun_(Kid)-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="1">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="shanhaijing/art+l2d/Memorial_Lobby_Shun_(Kid).mp4" type="video/mp4">
+                        </video>
+                        <p class="video-caption">Shun Live2D</p>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">Shanhaijing</td><td class="info-value">Attacker/Back</td></tr>
+                    <tr><td class="info-label">Damage Type</td><td class="damage-type explosive">Explosive</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type light">Light</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Striker</td></tr>
+                </table>
+            </div>
+
+            <!-- Student 2: Kokona -->
+            <div class="student-card">
+                <header class="student-header"><h2>Kokona</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="2">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="2">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="2">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="2">
+                    <img src="shanhaijing/Kokona.png" alt="Kokona" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="2">
+                    <img src="shanhaijing/art+l2d/Kokona-art.jpeg" alt="Kokona Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="2">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="2">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="2">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="2">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="shanhaijing/chibi/tinyvid_optimized_4_Kokona-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="2">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="shanhaijing/art+l2d/Memorial_Lobby_Kokona.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-caption">Kokona Live2D</p>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">Shanhaijing</td><td class="info-value">Healer/Middle</td></tr>
+                    <tr><td class="info-label">Damage Type</td><td class="damage-type piercing">Penetration</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type special">Special</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Striker</td></tr>
+                </table>
+            </div>
+
+            <!-- Student 3: Rumi -->
+            <div class="student-card">
+                <header class="student-header"><h2>Rumi</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="3">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="3">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="3">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="3">
+                    <img src="shanhaijing/Rumi.png" alt="Rumi" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="3">
+                    <img src="shanhaijing/art+l2d/Rumi-art.jpeg" alt="Rumi Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="3">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="3">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="3">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="3">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="shanhaijing/chibi/tinyvid_optimized_3_Rumi-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="3">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="shanhaijing/art+l2d/Memorial_Lobby_Rumi.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-caption">Rumi Live2D</p>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">Shanhaijing</td><td class="info-value">Healer/Front</td></tr>
+                    <tr><td class="info-label">Damage Type</td><td class="damage-type explosive">Explosive</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type heavy">Heavy</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Striker</td></tr>
+                </table>
+            </div>
+
+            <!-- Student 4: Mina -->
+            <div class="student-card">
+                <header class="student-header"><h2>Mina</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="4">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="4">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="4">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="4">
+                    <img src="shanhaijing/Mina.png" alt="Mina" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="4">
+                    <img src="shanhaijing/art+l2d/mina-art.jpeg" alt="Mina Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="4">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="4">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="4">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="4">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="shanhaijing/chibi/tinyvid_optimized_2_Mina-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="4">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="shanhaijing/art+l2d/Memorial_Lobby_Mina.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-caption">Mina Live2D</p>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">Shanhaijing</td><td class="info-value">Support/Middle</td></tr>
+                    <tr><td class="info-label">Damage Type</td><td class="damage-type explosive">Explosive</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type heavy">Heavy</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Striker</td></tr>
+                </table>
+            </div>
+
+            <!-- Student 5: Reijo -->
+            <div class="student-card">
+                <header class="student-header"><h2>Reijo</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="5">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="5">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="5">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="5">
+                    <img src="shanhaijing/Reijo.png" alt="Reijo" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="5">
+                    <img src="shanhaijing/art+l2d/Reijo-art.jpeg" alt="Reijo Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="5">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="5">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="5">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="5">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="shanhaijing/chibi/tinyvid_optimized_1_Reijo-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="5">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="shanhaijing/art+l2d/Memorial_Lobby_Reijo.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-caption">Reijo Live2D</p>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">Shanhaijing</td><td class="info-value">Support/Middle</td></tr>
+                    <tr><td class="info-label">Damage Type</td><td class="damage-type mystic">Mystic</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type heavy">Heavy</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Striker</td></tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="school-footer">
+        <div class="footer-content">
+            <p class="footer-school">SHANHAIJING SENIOR SECONDARY SCHOOL</p>
+            <p class="footer-title">Character - Blue Archive</p>
+            <p class="footer-copyright">© 2025 Alwi Sihabudin. izin kepada ©Nexon Games, Yostar.</p>
+        </div>
+    </footer>
+
+    <script src="school-script.js"></script>
+</body>
+</html>

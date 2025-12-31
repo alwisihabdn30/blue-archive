@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyakkiyako Alliance Academy - Blue Archive</title>
+    <link rel="icon" href="gambar/logo blue archive.jpeg" type="image/jpeg">
+    <style>
+        :root {
+            --school-color: #a855f7; /* Purple untuk Hyakkiyako */
+        }
+    </style>
+    <link rel="stylesheet" href="school-style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="school-header">
+        <div class="header-container">
+            <h1 class="school-title">HYAKKIYAKO ALLIANCE ACADEMY</h1>
+            <a href="index.html" class="back-btn">← Kembali ke Lobby</a>
+        </div>
+    </header>
+
+    <!-- School Info Section -->
+    <section class="school-info-section">
+        <div class="info-container">
+            <div class="school-logo">
+                <img src="gambar/Hyakkiyako.jpg" alt="Hyakkiyako Logo">
+            </div>
+            <div class="school-description">
+                <h3 class="subtitle">/// ALLIANCE ACADEMY</h3>
+                <h2 class="school-name">HYAKKIYAKO</h2>
+                <p class="description-text">
+                    Hyakkiyako Alliance Academy adalah federasi sekolah yang berakar pada tradisi Jepang kuno. 
+                    Sekolah ini terkenal dengan organisasi yakuza-nya dan memiliki hierarki yang ketat. 
+                    Siswa-siswa Hyakkiyako menghormati tradisi, kesetiaan, dan kode kehormatan mereka. 
+                    Mereka dikenal dengan gaya bertarung yang elegan namun mematikan.
+                </p>
+                <div class="stats-boxes">
+                    <div class="stat-box">
+                        <div class="stat-number">11</div>
+                        <div class="stat-label">Total Siswa</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Strikers</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Special</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Students Grid Section -->
+    <section class="students-section">
+        <div class="students-container">
+            <!-- Student 1: Izuna -->
+            <div class="student-card">
+                <header class="student-header"><h2>Izuna</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="1">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="1">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="1">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="1">
+                    <img src="khyakkiyako/Izuna.png" alt="Izuna" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="1">
+                    <img src="khyakkiyako/art+l2d/Izuna-art.jpeg" alt="Izuna Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="1">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="1">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="1">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="1">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="khyakkiyako/chibi/Izuna.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="1">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="khyakkiyako/art+l2d/Memorial_Lobby_Izuna.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Izuna Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">Hyakkiyako</td><td class="info-value">DPS/Front</td></tr>
+                    <tr><td class="info-label">Damage Type</td><td class="damage-type mystic">Mystic</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type light">Light</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Striker</td></tr>
+                </table>
+            </div>
+
+            <!-- Student 2: Tsukuyo -->
+            <div class="student-card">
+                <header class="student-header"><h2>Tsukuyo</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="2">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="2">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="2">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="2">
+                    <img src="khyakkiyako/Tsukuyo.png" alt="Tsukuyo" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="2">
+                    <img src="khyakkiyako/art+l2d/tsukuyo-art.jpeg" alt="Tsukuyo Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="2">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="2">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="2">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="2">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="khyakkiyako/chibi/Tsukuyo.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="2">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="khyakkiyako/art+l2d/Memorial_Lobby_Tsukuyo.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Tsukuyo Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">Hyakkiyako</td><td class="info-value">Tank/Front</td></tr>
+                    <tr><td class="info-label">Damage Type</td><td class="damage-type mystic">Mystic</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type light">Light</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Striker</td></tr>
+                </table>
+            </div>
+
+            <!-- Student 3: Mimori -->
+            <div class="student-card">
+                <header class="student-header"><h2>Mimori</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="3">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="3">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="3">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="3">
+                    <img src="khyakkiyako/Mimori.png" alt="Mimori" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="3">
+                    <img src="khyakkiyako/art+l2d/Mimori-art.jpeg" alt="Mimori Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="3">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="3">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="3">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="3">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="khyakkiyako/chibi/Mimori.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="3">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="khyakkiyako/art+l2d/Memorial_Lobby_Mimori.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Mimori Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">Hyakkiyako</td><td class="info-value">Support/Middle</td></tr>
+                    <tr><td class="info-label">Damage Type</td><td class="damage-type mystic">Mystic</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type light">Light</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Striker</td></tr>
+                </table>
+            </div>
+
+            <!-- Student 4: Michiru -->
+            <div class="student-card">
+                <header class="student-header"><h2>Michiru</h2></header>
+                <div class="star-rating"><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="4">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="4">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="4">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="4">
+                    <img src="khyakkiyako/Michiru.png" alt="Michiru" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="4">
+                    <img src="khyakkiyako/art+l2d/Michiru-art.jpeg" alt="Michiru Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="4">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="4">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="4">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="4">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="khyakkiyako/chibi/Michiru.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="4">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="khyakkiyako/art+l2d/Memorial_Lobby_Michiru.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Michiru Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">Hyakkiyako</td><td class="info-value">DPS/Front</td></tr>
+                    <tr><td class="info-label">Damage Type</td><td class="damage-type mystic">Mystic</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type light">Light</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Striker</td></tr>
+                </table>
+            </div>
+
+            <!-- Student 5: Yukari -->
+            <div class="student-card">
+                <header class="student-header"><h2>Yukari</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="5">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="5">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="5">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="5">
+                    <img src="khyakkiyako/Yukari.png" alt="Yukari" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="5">
+                    <img src="khyakkiyako/art+l2d/Yukari -art.jpeg" alt="Yukari Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="5">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="5">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="5">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="5">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="khyakkiyako/chibi/Yukari.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="5">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="khyakkiyako/art+l2d/Memorial_Lobby_Yukari.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Yukari Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">Hyakkiyako</td><td class="info-value">DPS/Back</td></tr>
+                    <tr><td class="info-label">Damage Type</td><td class="damage-type sonic">Sonic</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type heavy">Heavy</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Striker</td></tr>
+                </table>
+            </div>
+
+            <!-- Student 6: Kikyou swimsuit -->
+            <div class="student-card">
+                <header class="student-header"><h2>Kikyou swimsuit</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="6">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="6">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="6">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="6">
+                    <img src="khyakkiyako/Kikyou_(Swimsuit).jpg" alt="Kikyou swimsuit" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="6">
+                    <img src="khyakkiyako/art+l2d/kikyou-art.jpeg" alt="Kikyou swimsuit Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="6">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="6">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="6">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="6">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="khyakkiyako/chibi/Kikyou.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="6">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="khyakkiyako/art+l2d/memorial_Lobby_Kikyou.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Kikyou swimsuit Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">Hyakkiyako</td><td class="info-value">Support/Back</td></tr>
+                    <tr><td class="info-label">Damage Type</td><td class="damage-type sonic">Sonic</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type heavy">Heavy</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Special</td></tr>
+                </table>
+            </div>
+
+            <!-- Student 7: Umika -->
+            <div class="student-card">
+                <header class="student-header"><h2>Umika</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="7">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="7">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="7">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="7">
+                    <img src="khyakkiyako/Umika.png" alt="Umika" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="7">
+                    <img src="khyakkiyako/art+l2d/umika-art.jpeg" alt="Umika Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="7">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="7">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="7">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="7">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="khyakkiyako/chibi/Umika.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="7">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="khyakkiyako/art+l2d/Memorial_Lobby_Umika.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Umika Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">Hyakkiyako</td><td class="info-value">DPS/Middle</td></tr>
+                    <tr><td class="info-label">Damage Type</td><td class="damage-type sonic">Sonic</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type special">Special</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Striker</td></tr>
+                </table>
+            </div>
+
+            <!-- Student 8: Nagusa -->
+            <div class="student-card">
+                <header class="student-header"><h2>Nagusa</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="8">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="8">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="8">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="8">
+                    <img src="khyakkiyako/Nagusa.png" alt="Nagusa" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="8">
+                    <img src="khyakkiyako/art+l2d/nagusa-art.jpeg" alt="Nagusa Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="8">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="8">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="8">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="8">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="khyakkiyako/chibi/nagusa.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="8">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="khyakkiyako/art+l2d/nagusa_lobby.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Nagusa Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">Hyakkiyako</td><td class="info-value">DPS/Back</td></tr>
+                    <tr><td class="info-label">Damage Type</td><td class="damage-type sonic">Sonic</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type elastic">elastic</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Striker</td></tr>
+                </table>
+            </div>
+
+            <!-- Student 9: Niya -->
+            <div class="student-card">
+                <header class="student-header"><h2>Niya</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="9">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="9">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="9">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="9">
+                    <img src="khyakkiyako/Niya.jpg" alt="Niya" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="9">
+                    <img src="khyakkiyako/art+l2d/Niya-art.jpeg" alt="Niya Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="9">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="9">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="9">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="9">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="khyakkiyako/chibi/niya.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="9">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="khyakkiyako/art+l2d/Memorial_Lobby_Niya.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Niya Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">Hyakkiyako</td><td class="info-value">Attacker/Back</td></tr>
+                    <tr><td class="info-label">Damage Type</td><td class="damage-type sonic">Sonic</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type heavy">Heavy</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Special</td></tr>
+                </table>
+            </div>
+
+            <!-- Student 10: Tsukuyo (Dress) -->
+            <div class="student-card">
+                <header class="student-header"><h2>Tsukuyo (Dress)</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="10">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="10">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="10">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="10">
+                    <img src="khyakkiyako/Tsukuyo_(Dress).jpg" alt="Tsukuyo Dress" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="10">
+                    <img src="khyakkiyako/art+l2d/Tsukuyo_(Dress)-art.jpeg" alt="Tsukuyo Dress Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="10">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="10">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="10">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="10">
+                        <img src="khyakkiyako/chibi/Tsukuyo_Dress-chibi.jpg" alt="Tsukuyo Dress Chibi" class="character-image chibi">
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="10">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="khyakkiyako/art+l2d/Memorial_Lobby_Tsukuyo.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Tsukuyo (Dress) Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">Hyakkiyako</td><td class="info-value">Tank/Front</td></tr>
+                    <tr><td class="info-label">Damage Type</td><td class="damage-type penetration">Penetration</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type light">Light</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Striker</td></tr>
+                </table>
+            </div>
+
+            <!-- Student 11: Michiru (Dress) -->
+            <div class="student-card">
+                <header class="student-header"><h2>Michiru (Dress)</h2></header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="11">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="11">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="11">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="11">
+                    <img src="khyakkiyako/Michiru_(Dress).jpg" alt="Michiru Dress" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="11">
+                    <img src="khyakkiyako/art+l2d/Michiru_(Dress)-art.jpeg" alt="Michiru Dress Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="11">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="11">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="11">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="11">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="khyakkiyako/chibi/Michiru_(Dress)-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="11">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="khyakkiyako/art+l2d/Memorial_Lobby_Michiru.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Michiru (Dress) Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr><td class="info-label">School</td><td class="info-label">Role</td></tr>
+                    <tr><td class="info-value">Hyakkiyako</td><td class="info-value">Healer/Back</td></tr>
+                    <tr><td class="info-label">Damage Type</td><td class="damage-type explosive">Explosive</td></tr>
+                    <tr><td class="info-label">Armor Type</td><td class="armor-type light">Light</td></tr>
+                    <tr><td class="info-label">Combat Class</td><td class="info-value">Special</td></tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="school-footer">
+        <div class="footer-content">
+            <p class="footer-school">HYAKKIYAKO ALLIANCE ACADEMY</p>
+            <p class="footer-title">Character - Blue Archive</p>
+            <p class="footer-copyright">© 2025 Alwi Sihabudin. izin kepada ©Nexon Games, Yostar.</p>
+        </div>
+    </footer>
+
+    <script src="school-script.js"></script>
+</body>
+</html>
