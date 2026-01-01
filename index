@@ -32,7 +32,7 @@
         <div class="hero-overlay">
             <div class="hero-content">
                 <img src="gambar/logo blue archive.jpeg" alt="Blue Archive Logo" class="hero-logo">
-                <h1 class="hero-title neon-text">BLUE ARCHIVE</h1>
+                <h1 class="hero-title">BLUE ARCHIVE</h1>
                 <p class="hero-subtitle">Student Character - Kivotos Academy</p>
             </div>
         </div>
@@ -365,7 +365,7 @@
     <!-- Gallery Section -->
     <section id="gallery" class="gallery-section container">
         <h2 class="section-title">GALLERY MOMENTS</h2>
-        <p class="section-subtitle">Koleksi foto bersama dari setiap murid Kivotos Academy</p>
+        <p class="section-subtitle">Koleksi foto bareng dari murid di setiap Kivotos Academy</p>
 
         <div class="gallery-grid">
             <!-- Gallery Item 1 -->
@@ -434,6 +434,65 @@
                 <div class="gallery-title">Shanhaijing Stories</div>
             </div>
         </div>
+
+        <!-- Nino Special Section -->
+    <section id="nino-special" class="nino-special-section container">
+        <h2 class="section-title">UNTUK WAIFU SAYA YANG SETIA YAITU NINO</h2>
+        <p class="section-subtitle">Waifu terbaik dari Quintessential Quintuplets</p>
+
+        <div class="nino-special-card">
+            <!-- Video Section (Full Width) -->
+            <div class="nino-video-container">
+                <video id="ninoVideo" loop playsinline class="nino-video" muted>
+                    <source src="vidio/nino.mp4" type="video/mp4">
+                </video>
+                <button class="nino-sound-toggle" id="ninoSoundToggle">
+                    <span class="sound-icon">🔇</span>
+                    <!-- TAMBAHKAN INI (Fullscreen Button) -->
+                <button class="nino-fullscreen-toggle" id="ninoFullscreenToggle">
+                    <span class="fullscreen-icon">⛶</span>
+                </button>
+                </button>
+            </div>
+            
+            <!-- Content Section (Below Video) -->
+            <div class="nino-content">
+                <div class="nino-header">
+                    <h3 class="nino-name">Nino Nakano</h3>
+                    <div class="nino-anime">The Quintessential Quintuplets</div>
+                </div>
+                
+                <div class="nino-info-grid">
+                    <div class="nino-info-item">
+                        <span class="info-label">UMUR</span>
+                        <span class="info-value">17 Tahun</span>
+                    </div>
+                    <div class="nino-info-item">
+                        <span class="info-label">KEPRIBADIAN</span>
+                        <span class="info-value">Tsundere, Tegas, Setia</span>
+                    </div>
+                    <div class="nino-info-item">
+                        <span class="info-label">HOBI</span>
+                        <span class="info-value">Memasak, Fashion</span>
+                    </div>
+                    <div class="nino-info-item">
+                        <span class="info-label">KEAHLIAN</span>
+                        <span class="info-value">Cooking Expert</span>
+                    </div>
+                </div>
+
+                <div class="nino-description">
+                    <ul class="nino-traits">
+                        <li>Memiliki kepribadian yang kuat dan tidak takut mengungkapkan perasaannya</li>
+                        <li>Sangat setia dan protektif terhadap orang yang dicintainya</li>
+                        <li>Ahli memasak dengan masakan yang luar biasa lezat</li>
+                        <li>Perkembangan karakter yang luar biasa dari awal hingga akhir cerita</li>
+                        <li>Tsundere terbaik yang berani mengambil langkah pertama</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
         <!-- Gallery Modal -->
         <div id="galleryModal" class="gallery-modal">
@@ -534,9 +593,3 @@
     <script src="ba-script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
