@@ -46,11 +46,6 @@ body {
     }
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 /* Animasi Neon Glow untuk School Cards */
 @keyframes neonGlow {
     0% {
@@ -89,19 +84,6 @@ body {
             0 0 20px var(--neon-pink),
             0 0 30px var(--neon-pink),
             0 0 40px var(--neon-pink);
-    }
-}
-
-/* Animasi Glow Movement */
-@keyframes glowMove {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
     }
 }
 
@@ -266,7 +248,7 @@ nav a:hover {
 
 /* ===== GAME INFO SECTION ===== */
 .game-info {
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 .info-content h2 {
@@ -869,6 +851,347 @@ nav a:hover {
     line-height: 1.8;
     color: var(--text-secondary);
     margin: 0;
+}
+
+/* ===== NINO SPECIAL SECTION ===== */
+.nino-special-section {
+    padding: 100px 0;
+    background: linear-gradient(180deg, transparent, rgba(236, 72, 153, 0.03));
+}
+
+.nino-special-card {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, rgba(10, 10, 10, 0.95), rgba(5, 5, 5, 0.98));
+    border: 2px solid rgba(6, 182, 212, 0.4);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 40px;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.nino-special-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple), var(--neon-pink));
+    animation: neonGlow 3s infinite;
+    z-index: 5;
+}
+
+.nino-special-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(6, 182, 212, 0.5);
+    border-color: var(--accent-cyan);
+}
+
+/* Video Container - Full Width Landscape */
+.nino-video-container {
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 550px;
+}
+
+.nino-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mode normal: cover */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Override untuk fullscreen: gunakan contain */
+.nino-video:fullscreen,
+.nino-video:-webkit-full-screen {
+    object-fit: contain !important;
+}
+
+/* ===== FULLSCREEN VIDEO FIX - CONTAIN MODE ===== */
+/* Fullscreen untuk VIDEO element langsung */
+.nino-video:fullscreen,
+.nino-video:-webkit-full-screen,
+.nino-video:-moz-full-screen,
+.nino-video:-ms-fullscreen {
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: contain !important; /* PENTING: Tidak terpotong */
+    background: #000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Fallback jika container yang fullscreen */
+.nino-video-container:fullscreen,
+.nino-video-container:-webkit-full-screen,
+.nino-video-container:-moz-full-screen,
+.nino-video-container:-ms-fullscreen {
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nino-video-container:fullscreen .nino-video,
+.nino-video-container:-webkit-full-screen .nino-video,
+.nino-video-container:-moz-full-screen .nino-video,
+.nino-video-container:-ms-fullscreen .nino-video {
+    object-fit: contain !important;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Sembunyikan tombol saat fullscreen */
+.nino-video-container:fullscreen .nino-sound-toggle,
+.nino-video-container:-webkit-full-screen .nino-sound-toggle,
+.nino-video-container:fullscreen .nino-fullscreen-toggle,
+.nino-video-container:-webkit-full-screen .nino-fullscreen-toggle,
+.nino-video:fullscreen ~ .nino-sound-toggle,
+.nino-video:fullscreen ~ .nino-fullscreen-toggle {
+    display: none !important;
+}
+
+/* Hover effect tetap untuk mode normal */
+.nino-special-card:hover .nino-video {
+    transform: scale(1.03);
+}
+
+/* Sound Toggle Button */
+.nino-sound-toggle {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: rgba(6, 182, 212, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.nino-sound-toggle:hover {
+    background: var(--accent-cyan);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.8);
+}
+
+.sound-icon {
+    font-size: 24px;
+}
+
+/* TAMBAHKAN INI (Fullscreen Toggle Button) */
+.nino-fullscreen-toggle {
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+    width: 50px;
+    height: 50px;
+    background: rgba(236, 72, 153, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.nino-fullscreen-toggle:hover {
+    background: var(--accent-pink);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.8);
+}
+
+.fullscreen-icon {
+    font-size: 24px;
+}
+
+/* Play/Pause Indicator Overlay */
+.nino-play-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 80px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: var(--accent-cyan);
+    pointer-events: none;
+    z-index: 15;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.nino-play-indicator.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.nino-video-container {
+    cursor: pointer;
+}
+
+/* Content Area - Below Video */
+.nino-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 40px 50px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.nino-header {
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(6, 182, 212, 0.2);
+}
+
+.nino-name {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: var(--accent-cyan);
+    margin: 0 0 10px 0;
+    text-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
+}
+
+.nino-anime {
+    font-size: 18px;
+    color: var(--text-secondary);
+    letter-spacing: 1px;
+}
+
+/* Info Grid - 2 Columns */
+.nino-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.nino-info-item {
+    background: rgba(6, 182, 212, 0.05);
+    border-left: 3px solid var(--accent-cyan);
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.nino-info-item:hover {
+    background: rgba(6, 182, 212, 0.1);
+    border-left-color: var(--neon-blue);
+    transform: translateX(5px);
+}
+
+.info-label {
+    font-size: 11px;
+    color: var(--accent-cyan);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.info-value {
+    font-size: 16px;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* Description */
+.nino-description {
+    margin-top: 5px;
+}
+
+.nino-traits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nino-traits li {
+    font-size: 16px;
+    line-height: 2;
+    color: var(--text-secondary);
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.nino-traits li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-cyan);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .nino-video-container {
+        height: 400px;
+    }
+    
+    .nino-content {
+        padding: 30px 35px;
+    }
+    
+    .nino-name {
+        font-size: 36px;
+    }
+    
+    .nino-info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .nino-video-container {
+        height: 300px;
+    }
+    
+    .nino-content {
+        padding: 25px 20px;
+    }
+    
+    .nino-name {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+    
+    .nino-anime {
+        font-size: 14px;
+    }
+    
+    .nino-rank {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+    
+    .nino-traits li {
+        font-size: 14px;
+    }
 }
 
 /* ===== CONTACT FORM SECTION ===== */
