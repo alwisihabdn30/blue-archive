@@ -71,7 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ===== HEADER SCROLL EFFECT =====
-    let lastScroll = 0;
     const header = document.querySelector('header');
     
     if (header) {
@@ -85,24 +84,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 header.style.background = 'rgba(0, 0, 0, 0.9)';
                 header.style.boxShadow = 'none';
             }
-            
-            lastScroll = currentScroll;
         });
     }
 
     // ===== WAIFU CARD INTERACTION =====
     document.querySelectorAll('.waifu-card-landscape').forEach(card => {
         card.addEventListener('click', function() {
-            const waifuName = this.querySelector('.waifu-name-landscape');
-            if (waifuName) {
-                console.log('Waifu Selected:', waifuName.textContent);
-                
-                // Efek klik
-                this.style.transform = 'scale(0.98)';
-                setTimeout(() => {
-                    this.style.transform = '';
-                }, 200);
-            }
+            // Efek klik
+            this.style.transform = 'scale(0.98)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 200);
         });
     });
 
@@ -140,24 +132,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ===== CONSOLE WELCOME MESSAGE =====
-    console.log('%c╔═══════════════════════════╗', 'color: #06b6d4;');
+    console.log('%c╔═══════════════════════╗', 'color: #06b6d4;');
     console.log('%c🎮 BLUE ARCHIVE DATABASE', 'color: #06b6d4; font-size: 20px; font-weight: bold;');
     console.log('%c   Character Database System v1.0', 'color: #9ca3af; font-size: 12px;');
-    console.log('%c║═══════════════════════════╣', 'color: #06b6d4;');
+    console.log('%c╠═══════════════════════╣', 'color: #06b6d4;');
     console.log('%cWelcome to Kivotos Academy!', 'color: #fff; font-size: 14px;');
     console.log('%cCreated by: Alwi Sihabudin', 'color: #9ca3af; font-size: 12px;');
-    console.log('%c╚═══════════════════════════╝', 'color: #06b6d4;');
-
-    // ===== AUTO REFRESH VIDEO jika Error =====
-    const videos = document.querySelectorAll('video');
-    videos.forEach(video => {
-        video.addEventListener('error', function() {
-            console.log('Video error, attempting reload...');
-            setTimeout(() => {
-                this.load();
-            }, 1000);
-        });
-    });
+    console.log('%c╚═══════════════════════╝', 'color: #06b6d4;');
 
     // ===== LIVE CLOCK =====
     function updateClock() {
@@ -186,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Gallery Data
     const galleryData = {
         '1': {
-            title: 'Abydos Memories',
+            title: 'Abydos School Stories',
             description: 'Sekolah Abydos yang hampir hancur, namun memiliki siswa-siswa yang pantang menyerah. Mereka berjuang untuk mempertahankan sekolah mereka dari kehancuran total. Dipimpin oleh para siswa yang berani, Abydos adalah simbol harapan dan ketekunan di tengah kesulitan.'
         },
         '2': {
@@ -260,6 +241,155 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // ===== NINO SPECIAL VIDEO CONTROLS =====
+    const ninoVideo = document.getElementById('ninoVideo');
+    const ninoSoundToggle = document.getElementById('ninoSoundToggle');
+    const ninoFullscreenToggle = document.getElementById('ninoFullscreenToggle');
+    const soundIcon = document.querySelector('.sound-icon');
+    const ninoVideoContainer = document.querySelector('.nino-video-container');
+
+    if (ninoVideo && ninoSoundToggle) {
+        // Create play/pause indicator
+        const playIndicator = document.createElement('div');
+        playIndicator.className = 'nino-play-indicator';
+        playIndicator.innerHTML = '▶️';
+        ninoVideoContainer.appendChild(playIndicator);
+
+        // Auto play video when loaded
+        ninoVideo.muted = true;
+        ninoVideo.play().catch(err => {
+            console.log('Nino video autoplay prevented:', err);
+        });
+
+        // Function to show play/pause indicator
+        function showPlayIndicator(isPaused) {
+            playIndicator.innerHTML = isPaused ? '⏸️' : '▶️';
+            playIndicator.classList.add('show');
+            setTimeout(() => {
+                playIndicator.classList.remove('show');
+            }, 500);
+        }
+
+        // Click video to play/pause (WITH FULLSCREEN CHECK)
+        ninoVideoContainer.addEventListener('click', function(e) {
+        // Ignore clicks on buttons
+        if (e.target.closest('.nino-sound-toggle') || 
+            e.target.closest('.nino-fullscreen-toggle')) {
+            return;
+            }
+
+        // JANGAN play/pause saat dalam mode fullscreen
+        if (document.fullscreenElement || document.webkitFullscreenElement) {
+            return; // Exit jika sedang fullscreen
+        }
+
+        if (ninoVideo.paused) {
+            ninoVideo.play();
+            showPlayIndicator(false);
+        } else {
+            ninoVideo.pause();
+            showPlayIndicator(true);
+        }
+        });
+
+        // Toggle sound on/off
+        ninoSoundToggle.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent video play/pause
+            if (ninoVideo.muted) {
+                ninoVideo.muted = false;
+                soundIcon.textContent = '🔊';
+                this.style.background = 'rgba(16, 185, 129, 0.9)';
+            } else {
+                ninoVideo.muted = true;
+                soundIcon.textContent = '🔇';
+                this.style.background = 'rgba(6, 182, 212, 0.9)';
+            }
+        });
+
+        // Fullscreen toggle
+        if (ninoFullscreenToggle) {
+            ninoFullscreenToggle.addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent video play/pause
+                
+                if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+                    // Enter fullscreen - langsung ke VIDEO, bukan container
+                    if (ninoVideo.requestFullscreen) {
+                        ninoVideo.requestFullscreen();
+                    } else if (ninoVideo.webkitRequestFullscreen) {
+                        ninoVideo.webkitRequestFullscreen();
+                    } else if (ninoVideo.mozRequestFullScreen) {
+                        ninoVideo.mozRequestFullScreen();
+                    } else if (ninoVideo.msRequestFullscreen) {
+                        ninoVideo.msRequestFullscreen();
+                    }
+                } else {
+                    // Exit fullscreen
+                    if (document.exitFullscreen) {
+                        document.exitFullscreen();
+                    } else if (document.webkitExitFullscreen) {
+                        document.webkitExitFullscreen();
+                    } else if (document.mozCancelFullScreen) {
+                        document.mozCancelFullScreen();
+                    } else if (document.msExitFullscreen) {
+                        document.msExitFullscreen();
+                    }
+                }
+            });
+
+            // Update fullscreen icon when fullscreen changes
+            document.addEventListener('fullscreenchange', updateFullscreenIcon);
+            document.addEventListener('webkitfullscreenchange', updateFullscreenIcon);
+            document.addEventListener('mozfullscreenchange', updateFullscreenIcon);
+            document.addEventListener('msfullscreenchange', updateFullscreenIcon);
+
+            function updateFullscreenIcon() {
+                const fullscreenIcon = document.querySelector('.fullscreen-icon');
+                if (document.fullscreenElement || document.webkitFullscreenElement) {
+                    fullscreenIcon.textContent = '✕'; // Exit fullscreen icon (X)
+                } else {
+                    fullscreenIcon.textContent = '⛶'; // Enter fullscreen icon
+                }
+            }
+        }
+
+        // Error handling
+        ninoVideo.addEventListener('error', function() {
+            console.log('Nino video error, attempting reload...');
+            setTimeout(() => {
+                this.load();
+                this.play().catch(err => console.log('Reload failed:', err));
+            }, 1000);
+        });
+
+        // Keyboard shortcuts for video
+        document.addEventListener('keydown', function(e) {
+            if (e.code === 'Space' && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+                e.preventDefault();
+                if (ninoVideo.paused) {
+                    ninoVideo.play();
+                    showPlayIndicator(false);
+                } else {
+                    ninoVideo.pause();
+                    showPlayIndicator(true);
+                }
+            }
+        });
+
+        // TAMBAHKAN INI - Prevent auto-play saat exit fullscreen
+        document.addEventListener('fullscreenchange', handleFullscreenChange);
+        document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+        document.addEventListener('mozfullscreenchange', handleFullscreenChange);
+        document.addEventListener('msfullscreenchange', handleFullscreenChange);
+
+        function handleFullscreenChange() {
+            // Cek apakah keluar dari fullscreen
+            if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+                // JANGAN auto-play, biarkan status sesuai user
+                // Tidak ada aksi (video tetap sesuai state sebelumnya)
+            }
+        }
+    }
+
     // ===== CONTACT FORM FUNCTIONALITY =====
     const contactForm = document.getElementById('contactForm');
     const formSuccess = document.getElementById('formSuccess');
@@ -297,19 +427,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-    // Form Input Animation
-    const formInputs = document.querySelectorAll('.contact-form input, .contact-form select, .contact-form textarea');
-    formInputs.forEach(input => {
-        input.addEventListener('focus', function() {
-            this.parentElement.classList.add('focused');
-        });
-
-        input.addEventListener('blur', function() {
-            if (this.value === '') {
-                this.parentElement.classList.remove('focused');
-            }
-        });
-    });
 
 });
