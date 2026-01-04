@@ -268,7 +268,6 @@ nav a:hover {
     box-shadow: 0 0 15px rgba(255, 193, 7, 0.2);
 }
 
-
 .hero-subtitle {
     font-size: 18px;
     color: var(--text-secondary);
@@ -1598,4 +1597,5 @@ footer {
     .gallery-thumb {
         height: 180px;
     }
+
 }
