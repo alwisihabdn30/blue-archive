@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gehenna Academy - Blue Archive</title>
+    <link rel="icon" href="gambar/logo blue archive.jpeg" type="image/jpeg">
+    <style>
+        :root {
+            --school-color: #dc2626;
+            /* Red untuk Gehenna */
+        }
+    </style>
+    <link rel="stylesheet" href="school-style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="school-header">
+        <div class="header-container">
+            <h1 class="school-title">GEHENNA ACADEMY</h1>
+            <div class="header-actions">
+                <button class="sidebar-toggle" id="sidebarToggle">☰</button>
+                <a href="index.html" class="back-btn">← Kembali ke Lobby</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar-menu" id="sidebarMenu">
+        <div class="sidebar-header">
+            <div class="sidebar-brand">BLUE ARCHIVE</div>
+            <button class="sidebar-close" id="sidebarClose">✕</button>
+        </div>
+        <nav class="sidebar-nav">
+            <div class="sidebar-link-wrapper">
+                <a href="index.html" class="sidebar-link">
+                    <span class="sidebar-icon">🏠</span>
+                    <span class="sidebar-text">Home</span>
+                </a>
+            </div>
+            <div class="sidebar-link-wrapper">
+                <a href="index.html#sekolah" class="sidebar-link">
+                    <span class="sidebar-icon">🏫</span>
+                    <span class="sidebar-text">Sekolah</span>
+                </a>
+            </div>
+            <div class="sidebar-link-wrapper">
+                <a href="index.html#waifu" class="sidebar-link">
+                    <span class="sidebar-icon">💫</span>
+                    <span class="sidebar-text">Top Waifu</span>
+                </a>
+            </div>
+            <div class="sidebar-link-wrapper">
+                <a href="index.html#gallery" class="sidebar-link">
+                    <span class="sidebar-icon">📸</span>
+                    <span class="sidebar-text">Gallery</span>
+                </a>
+            </div>
+            <div class="sidebar-link-wrapper">
+                <a href="contact.html" class="sidebar-link">
+                    <span class="sidebar-icon">✉️</span>
+                    <span class="sidebar-text">Contact</span>
+                </a>
+            </div>
+        </nav>
+        <div class="sidebar-footer">
+            <p class="sidebar-school">GEHENNA</p>
+        </div>
+    </div>
+
+    <!-- Sidebar Overlay (background gelap) -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- School Info Section -->
+    <section class="school-info-section">
+        <div class="info-container">
+            <div class="school-logo">
+                <img src="gambar/gehenna.jpg" alt="Gehenna Logo">
+            </div>
+            <div class="school-description">
+                <h3 class="subtitle">/// ACADEMY</h3>
+                <h2 class="school-name">GEHENNA</h2>
+                <p class="description-text">
+                    Gehenna Academy adalah sekolah yang terkenal dengan reputasi keras dan gaya hidup bebas.
+                    Siswa-siswa di sini dikenal berani, mandiri, dan memiliki semangat pemberontak.
+                    Meskipun terlihat kasar di luar, mereka memiliki loyalitas tinggi terhadap teman-teman
+                    dan menghargai kebebasan individu.
+                </p>
+                <div class="stats-boxes">
+                    <div class="stat-box">
+                        <div class="stat-number">23</div>
+                        <div class="stat-label">Total Siswa</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">15</div>
+                        <div class="stat-label">Strikers</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Special</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Students Grid Section -->
+    <section class="students-section">
+        <div class="students-container">
+            <!-- Student 1: Juri -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Juri</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="1">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="1">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="1">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="1">
+                    <img src="gehenna foto/Juri.jpg" alt="Juri" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="1">
+                    <img src="gehenna foto/art/juri-art.jpeg" alt="Juri Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="1">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="1">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="1">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="1">
+                        <img src="gehenna foto/chibi/Juri-chibi.jpeg" alt="Juri Chibi" class="character-image chibi">
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="1">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/Memorial_Lobby_Juri.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Juri Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">Support/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type explosive">Explosive</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type light">Light</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Special</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 2: Haruka -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Haruka</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="2">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="2">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="2">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="2">
+                    <img src="gehenna foto/Haruka.jpg" alt="Haruka" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="2">
+                    <img src="gehenna foto/art/haruka-art.jpeg" alt="Haruka Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="2">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="2">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="2">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="2">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/tinyvid_optimized_10_Haruka-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="2">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/Memorial_Lobby_Haruka.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Haruka Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">Tank/front</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type explosive">Explosive</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type light">Light</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 3: Chinatsu Hot Spring -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Chinatsu Hot Spring</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="3">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="3">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="3">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="3">
+                    <img src="gehenna foto/Chinatsu.png" alt="Chinatsu Hot Spring" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="3">
+                    <img src="gehenna foto/art/Chinatsu-art.jpeg" alt="Chinatsu Hot Spring Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="3">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="3">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="3">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="3">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/Chinatsu-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="3">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/Memorial_Lobby_Chinatsu.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Chinatsu Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">Support/Middle</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type mystic">Mystic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type light">Light</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Special</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 4: Mutsuki -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Mutsuki</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="4">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="4">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="4">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="4">
+                    <img src="gehenna foto/Mutsuki.jpg" alt="Mutsuki" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="4">
+                    <img src="gehenna foto/art/mutsuki-art.jpeg" alt="Mutsuki Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="4">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="4">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="4">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="4">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/tinyvid_optimized_9_Mutsuki-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="4">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/Memorial_Lobby_Mutsuki.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Mutsuki Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">DPS/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type explosive">Explosive</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type light">Light</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 5: Kayoko dress-->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Kayoko dress</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="5">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="5">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="5">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="5">
+                    <img src="gehenna foto/Kayoko_(Dress).png" alt="Kayoko dress" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="5">
+                    <img src="gehenna foto/art/kayoko dress-art.jpeg" alt="Kayoko dress Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="5">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="5">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="5">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="5">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/kayoko-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="5">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/kayoko-l2d.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Kayoko dress Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">DPS/middle</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type piercing">Penetration</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type light">Light</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 6: Junko -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Junko</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="6">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="6">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="6">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="6">
+                    <img src="gehenna foto/Junko.jpg" alt="Junko" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="6">
+                    <img src="gehenna foto/art/Junko-art.jpeg" alt="Junko Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="6">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="6">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="6">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="6">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/tinyvid_optimized_7_Junko-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="6">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/Memorial_Lobby_Junko.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Junko Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">DPS/Middle</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type piercing">Penetration</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type light">Light</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 7: Fuuka -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Fuuka</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="7">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="7">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="7">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="7">
+                    <img src="gehenna foto/Fuuka.jpg" alt="Fuuka" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="7">
+                    <img src="gehenna foto/art/fuuka-art.jpeg" alt="Fuuka Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="7">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="7">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="7">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="7">
+                        <img src="gehenna foto/chibi/Fuuka-chibi.jpeg" alt="Fuuka Chibi" class="character-image chibi">
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="7">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/Memorial_Lobby_Fuuka.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Fuuka Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">Healer/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type explosive">Explosive</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type heavy">Heavy</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Special</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 8: Akari -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Akari</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="8">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="8">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="8">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="8">
+                    <img src="gehenna foto/Akari.jpg" alt="Akari" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="8">
+                    <img src="gehenna foto/art/akari-art.jpeg" alt="Akari Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="8">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="8">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="8">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="8">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/tinyvid_optimized_6_Akari-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="8">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/Memorial_Lobby_Akari.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Akari Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">DPS/Middle</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type explosive">Explosive</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type heavy">Heavy</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 9: Izumi swimsuit -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Izumi swimsuit</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="9">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="9">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="9">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="9">
+                    <img src="gehenna foto/Izumi_(Swimsuit).png" alt="Izumi swimsuit" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="9">
+                    <img src="gehenna foto/art/izumi swimsuit-art.jpeg" alt="Izumi swimsuit Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="9">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="9">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="9">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="9">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/izumi-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="9">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/izumi-l2d.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Izumi swimsuit Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">Support/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type explosive">Explosive</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type light">Light</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 10: Lori -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Lori</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="10">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="10">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="10">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="10">
+                    <img src="gehenna foto/Iori.jpg" alt="Lori" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="10">
+                    <img src="gehenna foto/art/lori-art.jpeg" alt="Lori Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="10">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="10">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="10">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="10">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/tinyvid_optimized_4_Iori-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="10">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/Memorial_Lobby_Iori.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Lori Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">DPS/back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type piercing">Penetration</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type heavy">Heavy</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 11: Hina swimsuit -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Hina swimsuit</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="11">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="11">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="11">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="11">
+                    <img src="gehenna foto/Hina_(Swimsuit).png" alt="Hina swimsuit" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="11">
+                    <img src="gehenna foto/art/hina-art.jpeg" alt="Hina swimsuit Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="11">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="11">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="11">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="11">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/hina-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="11">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/hina-l2d.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Hina swimsuit Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">DPS/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type explosive">Explosive</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type heavy">Heavy</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 12: Haruna gmy-->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Haruna gmy</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="12">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="12">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="12">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="12">
+                    <img src="gehenna foto/Haruna_(Sportswear).png" alt="Haruna gmy" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="12">
+                    <img src="gehenna foto/art/haruna sport-art.jpeg" alt="Haruna gmy Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="12">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="12">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="12">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="12">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/tinyvid_optimized_2_Haruna-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="12">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/haruna-l2d.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Haruna gmy Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">Healer/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type sonic">Sonic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type heavy">Heavy</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Special</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 13: Aru dress-->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Aru dress</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="13">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="13">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="13">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="13">
+                    <img src="gehenna foto/Aru_(Dress).png" alt="Aru dress" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="13">
+                    <img src="gehenna foto/art/aru dress-art.jpeg" alt="Aru dress Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="13">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="13">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="13">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="13">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/aru-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="13">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/aru-l2d.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Aru dress Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">Support/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type piercing">Penetration</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type heavy">Heavy</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 14: ako dress -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Ako Dress</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="14">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="14">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="14">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="14">
+                    <img src="gehenna foto/Ako_(Dress).png" alt="Ako Dress" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="14">
+                    <img src="gehenna foto/art/ako dress-art.jpeg" alt="Ako Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="14">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="14">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="14">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="14">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/ako-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="14">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/ako-l2d.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Ako dress Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">Support/Middle</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type explosive">Explosive</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type special">Special</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 15: Sena Casual -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Sena Casual</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="15">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="15">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="15">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="15">
+                    <img src="gehenna foto/Sena.png" alt="Sena Casual" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="15">
+                    <img src="gehenna foto/art/Sena-art.jpeg" alt="Sena Casual Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="15">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="15">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="15">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="15">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/tinyvid_optimized_7_Sena-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="15">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/Memorial_Lobby_Sena.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">inilah my wife Sena Casual Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">Healer/Middle</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type sonic">Sonic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type heavy">Heavy</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 16: iroha -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Iroha</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="16">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="16">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="16">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="16">
+                    <img src="gehenna foto/Iroha.jpg" alt="Iroha" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="16">
+                    <img src="gehenna foto/art/iroha-art.jpeg" alt="Iroha Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="16">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="16">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="16">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="16">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/tinyvid_optimized_6_Iroha-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="16">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/Memorial_Lobby_Iroha.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Iroha Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">Support/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type mystic">Mystic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type heavy">Heavy</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Special</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 17: megu -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Megu</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="17">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="17">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="17">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="17">
+                    <img src="gehenna foto/Megu.jpg" alt="Megu" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="17">
+                    <img src="gehenna foto/art/megu-art.jpeg" alt="Megu Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="17">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="17">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="17">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="17">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/tinyvid_optimized_5_Megu-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="17">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/Memorial_Lobby_Megu.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Megu Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">DPS/Front</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type explosive">Explosive</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type special">Special</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 18: kasumi -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Kasumi</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="18">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="18">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="18">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="18">
+                    <img src="gehenna foto/Kasumi.jpg" alt="Kasumi" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="18">
+                    <img src="gehenna foto/art/Kasumi-kasumi.jpeg" alt="Kasumi Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="18">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="18">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="18">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="18">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/tinyvid_optimized_4_Kasumi-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="18">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/Memorial_Lobby_Kasumi.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Kasumi Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">DPS/Middle</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type sonic">Sonic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type heavy">Heavy</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 19: Ibuki -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Ibuki</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="19">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="19">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="19">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="19">
+                    <img src="gehenna foto/Ibuki.jpg" alt="Ibuki" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="19">
+                    <img src="gehenna foto/art/Ibuki-art.jpeg" alt="Ibuki Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="19">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="19">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="19">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="19">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/tinyvid_optimized_3_Ibuki-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="19">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/Memorial_Lobby_Ibuki.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Ibuki Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">Support/Middle</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type mystic">Mystic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type heavy">Heavy</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 20: Makoto -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Makoto</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="20">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="20">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="20">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="20">
+                    <img src="gehenna foto/Makoto.jpg" alt="Makoto" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="20">
+                    <img src="gehenna foto/art/makoto-art.jpeg" alt="Makoto Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="20">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="20">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="20">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="20">
+                        <img src="gehenna foto/chibi/Makoto-chibi.jpeg" alt="Makoto Chibi"
+                            class="character-image chibi">
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="20">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/Memorial_Lobby_Makoto.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Makoto Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">Tank/Front</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type piercing">Penetration</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type special">Special</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Special</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 21: Kirara -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Kirara</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="21">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="21">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="21">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="21">
+                    <img src="gehenna foto/Kirara.jpg" alt="Kirara" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="21">
+                    <img src="gehenna foto/art/kirara-art.jpeg" alt="Kirara Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="21">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="21">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="21">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="21">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/tinyvid_optimized_2_Kirara-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="21">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/kirara-l2d.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Kirara Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">DPS/Middle</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type sonic">Sonic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type light">Light</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 22: Satsuki -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Satsuki</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="22">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="22">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="22">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="22">
+                    <img src="gehenna foto/Satsuki.jpg" alt="Satsuki" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="22">
+                    <img src="gehenna foto/art/Satsuki-art.jpeg" alt="Satsuki Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="22">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="22">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="22">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="22">
+                        <img src="gehenna foto/chibi/Satsuki-chibi.jpg" alt="Satsuki Chibi"
+                            class="character-image chibi">
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="22">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/Memorial_Lobby_Satsuki.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Satsuki Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">DPS/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type explosive">Explosive</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type heavy">Heavy</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Special</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 23: Chiaki -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Chiaki</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="23">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="23">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="23">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="23">
+                    <img src="gehenna foto/Chiaki.jpg" alt="Chiaki" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="23">
+                    <img src="gehenna foto/art/chiaki-art.jpeg" alt="Chiaki Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="23">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="23">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="23">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="23">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="gehenna foto/chibi/tinyvid_optimized_1_Chiaki-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="23">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="gehenna-l2d/Memorial_Lobby_Chiaki.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">ini juga my wife Chiaki Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Gehenna</td>
+                        <td class="info-value">DPS/Middle</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type sonic">Sonic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type special">Special</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="school-footer">
+        <div class="footer-content">
+            <p class="footer-school">GEHENNA ACADEMY</p>
+            <p class="footer-title">Character - Blue Archive</p>
+            <p class="footer-copyright">© 2025 Alwi Sihabudin. izin kepada ©Nexon Games, Yostar.</p>
+        </div>
+    </footer>
+
+    <script src="school-script.js"></script>
+</body>
+
+</html>

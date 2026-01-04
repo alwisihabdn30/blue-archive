@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennium Science School - Blue Archive</title>
+    <link rel="icon" href="gambar/logo blue archive.jpeg" type="image/jpeg">
+    <style>
+        :root {
+            --school-color: #3b82f6;
+            /* Blue untuk Millennium */
+        }
+    </style>
+    <link rel="stylesheet" href="school-style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="school-header">
+        <div class="header-container">
+            <h1 class="school-title">MILLENNIUM</h1>
+            <div class="header-actions">
+                <button class="sidebar-toggle" id="sidebarToggle">☰</button>
+                <a href="index.html" class="back-btn">← Kembali ke Lobby</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar-menu" id="sidebarMenu">
+        <div class="sidebar-header">
+            <div class="sidebar-brand">BLUE ARCHIVE</div>
+            <button class="sidebar-close" id="sidebarClose">✕</button>
+        </div>
+        <nav class="sidebar-nav">
+            <div class="sidebar-link-wrapper">
+                <a href="index.html" class="sidebar-link">
+                    <span class="sidebar-icon">🏠</span>
+                    <span class="sidebar-text">Home</span>
+                </a>
+            </div>
+            <div class="sidebar-link-wrapper">
+                <a href="index.html#sekolah" class="sidebar-link">
+                    <span class="sidebar-icon">🏫</span>
+                    <span class="sidebar-text">Sekolah</span>
+                </a>
+            </div>
+            <div class="sidebar-link-wrapper">
+                <a href="index.html#waifu" class="sidebar-link">
+                    <span class="sidebar-icon">💫</span>
+                    <span class="sidebar-text">Top Waifu</span>
+                </a>
+            </div>
+            <div class="sidebar-link-wrapper">
+                <a href="index.html#gallery" class="sidebar-link">
+                    <span class="sidebar-icon">📸</span>
+                    <span class="sidebar-text">Gallery</span>
+                </a>
+            </div>
+            <div class="sidebar-link-wrapper">
+                <a href="contact.html" class="sidebar-link">
+                    <span class="sidebar-icon">✉️</span>
+                    <span class="sidebar-text">Contact</span>
+                </a>
+            </div>
+        </nav>
+        <div class="sidebar-footer">
+            <p class="sidebar-school">MILLENNIUM</p>
+        </div>
+    </div>
+
+    <!-- Sidebar Overlay (background gelap) -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- School Info Section -->
+    <section class="school-info-section">
+        <div class="info-container">
+            <div class="school-logo">
+                <img src="gambar/Millennium.jpg" alt="Millennium Logo">
+            </div>
+            <div class="school-description">
+                <h3 class="subtitle">/// SCIENCE SCHOOL</h3>
+                <h2 class="school-name">MILLENNIUM</h2>
+                <p class="description-text">
+                    Millennium Science School adalah sekolah yang berfokus pada teknologi dan inovasi. Siswa-siswa di
+                    sini
+                    dikenal dengan kecerdasan tinggi, kemampuan teknologi canggih, dan pendekatan ilmiah dalam
+                    menyelesaikan
+                    masalah. Sekolah ini memiliki fasilitas penelitian terbaik di Kivotos.
+                </p>
+                <div class="stats-boxes">
+                    <div class="stat-box">
+                        <div class="stat-number">16</div>
+                        <div class="stat-label">Total Siswa</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">14</div>
+                        <div class="stat-label">Strikers</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Special</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Students Grid Section -->
+    <section class="students-section">
+        <div class="students-container">
+            <!-- Student 1: Kotori -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Kotori</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="1">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="1">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="1">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="1">
+                    <img src="millenium/Kotori.png" alt="Kotori" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="1">
+                    <img src="millenium/art+L2d/kotori-art.jpeg" alt="Kotori Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="1">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="1">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="1">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="1">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="millenium/chibi/tinyvid_optimized_16_Kotori-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="1">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="millenium/art+L2d/Memorial_Lobby_Kotori.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Kotori Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Millennium</td>
+                        <td class="info-value">Support/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type piercing">Penetration</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type light">Light</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 2: Asuna -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Asuna</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="2">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="2">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="2">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="2">
+                    <img src="millenium/Asuna.png" alt="Asuna" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="2">
+                    <img src="millenium/art+L2d/Asuna-art.jpeg" alt="Asuna Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="2">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="2">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="2">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="2">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="millenium/chibi/tinyvid_optimized_15_Asuna-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="2">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="millenium/art+L2d/Memorial_Lobby_Asuna.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Asuna Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Millennium</td>
+                        <td class="info-value">DPS/Middle</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type mystic">Mystic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type light">Light</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 3: Yuuka Sportswear -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Yuuka Sportswear</track>
+                    </h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="3">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="3">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="3">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="3">
+                    <img src="millenium/Yuuka.png" alt="Yuuka Sportswear" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="3">
+                    <img src="millenium/art+L2d/Yuuka-art.jpeg" alt="Yuuka Sportswear Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="3">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="3">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="3">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="3">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="millenium/chibi/tinyvid_optimized_14_Yuuka-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="3">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="millenium/art+L2d/Memorial_Lobby_Yuuka.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">aduh ini my wife Yuuka Sportswear Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Millennium</td>
+                        <td class="info-value">Tank/Front</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type mystic">Mystic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type special">Special</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 4: akane -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Akane</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="4">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="4">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="4">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="4">
+                    <img src="millenium/Akane.png" alt="Akane" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="4">
+                    <img src="millenium/art+L2d/akane-art.jpeg" alt="Akane Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="4">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="4">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="4">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="4">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="millenium/chibi/tinyvid_optimized_13_Akane-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="4">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="millenium/art+L2d/Memorial_Lobby_Akane.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Akane Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Millennium</td>
+                        <td class="info-value">Support/Middle</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type piercing">Penetration</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type light">Light</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 5: sumire -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Sumire</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="5">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="5">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="5">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="5">
+                    <img src="millenium/Sumire.png" alt="Sumire" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="5">
+                    <img src="millenium/art+L2d/sumire-art.jpeg" alt="Sumire Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="5">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="5">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="5">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="5">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="millenium/chibi/tinyvid_optimized_12_Sumire-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="5">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="millenium/art+L2d/Memorial_Lobby_Sumire.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Sumire Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Millennium</td>
+                        <td class="info-value">DPS/Front</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type piercing">Piercing</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type special">Special</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 6: Neru -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Neru</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="6">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="6">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="6">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="6">
+                    <img src="millenium/Neru.png" alt="Neru" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="6">
+                    <img src="millenium/art+L2d/Neru-art.jpeg" alt="Neru Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="6">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="6">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="6">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="6">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="millenium/chibi/tinyvid_optimized_11_Neru-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="6">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="millenium/art+L2d/Memorial_Lobby_Neru.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Neru Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Millennium</td>
+                        <td class="info-value">DPS/Front</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type piercing">Penetration</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type light">Light</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 7: Maki -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Maki</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="7">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="7">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="7">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="7">
+                    <img src="millenium/Maki.png" alt="Maki" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="7">
+                    <img src="millenium/art+L2d/maki-art.jpeg" alt="Maki Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="7">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="7">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="7">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="7">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="millenium/chibi/tinyvid_optimized_10_Maki-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="7">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="millenium/art+L2d/Memorial_Lobby_Maki.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Maki Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Millennium</td>
+                        <td class="info-value">DPS/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type piercing">Penetration</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type light">Light</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 8: Eimi -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Eimi</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="8">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="8">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="8">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="8">
+                    <img src="millenium/Eimi.png" alt="Eimi" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="8">
+                    <img src="millenium/art+L2d/Eimi-art.jpeg" alt="Eimi Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="8">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="8">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="8">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="8">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="millenium/chibi/tinyvid_optimized_9_Eimi-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="8">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="millenium/art+L2d/Memorial_Lobby_Eimi.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Eimi Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Millennium</td>
+                        <td class="info-value">tank/Front</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type explosive">Explosive</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type light">Light</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 9: Arisu -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Arisu</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="9">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="9">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="9">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="9">
+                    <img src="millenium/Arisu.png" alt="Arisu" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="9">
+                    <img src="millenium/art+L2d/arisu-art.jpeg" alt="Arisu Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="9">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="9">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="9">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="9">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="millenium/chibi/tinyvid_optimized_8_Arisu-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="9">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="millenium/art+L2d/Memorial_Lobby_Arisu.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Arisu Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Millennium</td>
+                        <td class="info-value">Healer/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type mystic">Mystic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type special">Special</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 10: Momoi -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Momoi</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="10">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="10">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="10">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="10">
+                    <img src="millenium/Momoi.png" alt="Momoi" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="10">
+                    <img src="millenium/art+L2d/momoi-art.jpeg" alt="Momoi Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="10">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="10">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="10">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="10">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="millenium/chibi/tinyvid_optimized_7_Momoi-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="10">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="millenium/art+L2d/Memorial_Lobby_Momoi.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Momoi Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Millennium</td>
+                        <td class="info-value">Tank/Front</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type piercing">Penetration</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type light">Light</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 11: Midori -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Midori</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="11">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="11">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="11">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="11">
+                    <img src="millenium/Midori.png" alt="Midori" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="11">
+                    <img src="millenium/art+L2d/midori-art.jpeg" alt="Midori Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="11">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="11">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="11">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="11">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="millenium/chibi/tinyvid_optimized_6_Midori-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="11">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="millenium/art+L2d/Memorial_Lobby_Midori.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Midori Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Millennium</td>
+                        <td class="info-value">Tank/Front</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type piercing">Penetration</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type light">Light</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 12: Yuzu -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Yuzu</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="12">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="12">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="12">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="12">
+                    <img src="millenium/Yuzu.png" alt="Yuzu" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="12">
+                    <img src="millenium/art+L2d/yuzu-art.jpeg" alt="Yuzu Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="12">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="12">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="12">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="12">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="millenium/chibi/tinyvid_optimized_5_Yuzu-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="12">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="millenium/art+L2d/Memorial_Lobby_Yuzu.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Yuzu Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Millennium</td>
+                        <td class="info-value">DPS/Middle</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type piercing">Penetration</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type special">Special</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 13: Noa -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Noa</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="13">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="13">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="13">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="13">
+                    <img src="millenium/Noa.png" alt="Noa" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="13">
+                    <img src="millenium/art+L2d/noa-art.jpeg" alt="Noa Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="13">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="13">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="13">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="13">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="millenium/chibi/tinyvid_optimized_4_Noa-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="13">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="millenium/art+L2d/Memorial_Lobby_Noa.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Noa Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Millennium</td>
+                        <td class="info-value">Support/Middle</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type mystic">Mystic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type special">Special</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Special</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 14: Toki -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Toki</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="14">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="14">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="14">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="14">
+                    <img src="millenium/Toki.png" alt="Toki" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="14">
+                    <img src="millenium/art+L2d/toki-art.jpeg" alt="Toki Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="14">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="14">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="14">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="14">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="millenium/chibi/tinyvid_optimized_3_Toki-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="14">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="millenium/art+L2d/Memorial_Lobby_Toki.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Toki Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Millennium</td>
+                        <td class="info-value">DPS/Middle</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type explosive">Explosive</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type elastic">elastic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 15: Koyuki -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Koyuki</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="15">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="15">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="15">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="15">
+                    <img src="millenium/Koyuki.png" alt="Koyuki" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="15">
+                    <img src="millenium/art+L2d/koyuki-art.jpeg" alt="Koyuki Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="15">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="15">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="15">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="15">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="millenium/chibi/tinyvid_optimized_2_Koyuki-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="15">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="millenium/art+L2d/Memorial_Lobby_Koyuki.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Koyuki Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Millennium</td>
+                        <td class="info-value">DPS/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type mystic">Mystic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type heavy">Heavy</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 16: Rio -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Rio</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="16">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="16">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="16">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="16">
+                    <img src="millenium/Rio.png" alt="Rio" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="16">
+                    <img src="millenium/art+L2d/rio-art.jpeg" alt="Rio Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="16">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="16">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="16">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="16">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="millenium/chibi/tinyvid_optimized_1_Rio-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="16">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="millenium/art+L2d/Memorial_Lobby_Rio.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Rio Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Millennium</td>
+                        <td class="info-value">Support/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type mystic">Mystic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type elastic">Elastic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Special</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="school-footer">
+        <div class="footer-content">
+            <p class="footer-school">MILLENNIUM SCIENCE SCHOOL</p>
+            <p class="footer-title">Character - Blue Archive</p>
+            <p class="footer-copyright">© 2025 Alwi Sihabudin. izin kepada ©Nexon Games, Yostar.</p>
+        </div>
+    </footer>
+
+    <script src="school-script.js"></script>
+</body>
+
+</html>
