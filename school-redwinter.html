@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Winter Federal Academy - Blue Archive</title>
+    <link rel="icon" href="gambar/logo blue archive.jpeg" type="image/jpeg">
+    <style>
+        :root {
+            --school-color: #b91c1c;
+            /* Dark Red untuk Red Winter */
+        }
+    </style>
+    <link rel="stylesheet" href="wishlist-style.css">
+    <link rel="stylesheet" href="school-style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="school-header">
+        <div class="header-container">
+            <h1 class="school-title">RED WINTER</h1>
+            <div class="header-actions">
+                <button class="sidebar-toggle" id="sidebarToggle">☰</button>
+                <a href="index.html" class="back-btn">← Kembali ke Lobby</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar-menu" id="sidebarMenu">
+        <div class="sidebar-header">
+            <div class="sidebar-brand">BLUE ARCHIVE</div>
+            <button class="sidebar-close" id="sidebarClose">✕</button>
+        </div>
+        <nav class="sidebar-nav">
+            <div class="sidebar-link-wrapper">
+                <a href="index.html" class="sidebar-link">
+                    <span class="sidebar-icon">🏠</span>
+                    <span class="sidebar-text">Home</span>
+                </a>
+            </div>
+            <div class="sidebar-link-wrapper">
+                <a href="index.html#sekolah" class="sidebar-link">
+                    <span class="sidebar-icon">🏫</span>
+                    <span class="sidebar-text">Sekolah</span>
+                </a>
+            </div>
+            <div class="sidebar-link-wrapper">
+                <a href="quiz.html" class="sidebar-link">
+                    <span class="sidebar-icon">💫</span>
+                    <span class="sidebar-text">Quiz</span>
+                </a>
+            </div>
+            <div class="sidebar-link-wrapper">
+                <a href="my-favorites.html" class="sidebar-link">
+                    <span class="sidebar-icon">📸</span>
+                    <span class="sidebar-text">Favorites</span>
+                </a>
+            </div>
+            <div class="sidebar-link-wrapper">
+                <a href="contact.html" class="sidebar-link">
+                    <span class="sidebar-icon">✉️</span>
+                    <span class="sidebar-text">Contact</span>
+                </a>
+            </div>
+        </nav>
+        <div class="sidebar-footer">
+            <p class="sidebar-school">RED WINTER</p>
+        </div>
+    </div>
+
+    <!-- Sidebar Overlay (background gelap) -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- School Info Section -->
+    <section class="school-info-section">
+        <div class="info-container">
+            <div class="school-logo">
+                <img src="gambar/Red_Winter_Intro.jpg" alt="Red Winter Logo">
+            </div>
+            <div class="school-description">
+                <h3 class="subtitle">/// FEDERAL ACADEMY</h3>
+                <h2 class="school-name">RED WINTER</h2>
+                <p class="description-text">
+                    Red Winter Federal Academy adalah sekolah militer yang terinspirasi dari era Soviet.
+                    Dengan iklim bersalju sepanjang tahun dan disiplin militer yang ketat, sekolah ini menghasilkan
+                    siswa-siswa yang tangguh dan loyal. Mereka dikenal dengan semangat persaudaraan yang kuat,
+                    dedikasi tinggi terhadap tugas, dan kemampuan bertahan dalam kondisi ekstrem.
+                    Motto mereka: "Untuk Kejayaan Red Winter!"
+                </p>
+                <div class="stats-boxes">
+                    <div class="stat-box">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Total Siswa</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Strikers</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Special</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Students Grid Section -->
+    <section class="students-section">
+        <div class="students-container">
+            <!-- Student 1: Tomoe -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Tomoe</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="1">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="1">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="1">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="1">
+                    <img src="red winter/Tomoe.png" alt="Tomoe" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="1">
+                    <img src="red winter/art-l2d/Tomoe.jpeg" alt="Tomoe Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="1">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="1">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="1">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="1">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="red winter/chibi/tinyvid_optimized_5_Tomoe-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="1">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="red winter/art-l2d/Memorial_Lobby_Tomoe.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Tomoe Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Red Winter</td>
+                        <td class="info-value">Support/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type mystic">Mystic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type special">Special</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Special</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 2: Cherino (Hot Spring) -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Cherino (Hot Spring)</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="2">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="2">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="2">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="2">
+                    <img src="red winter/Cherino_(Hot_Spring).png" alt="Cherino (Hot Spring)" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="2">
+                    <img src="red winter/art-l2d/Cherino_(Hot_Spring).jpeg" alt="Cherino (Hot Spring) Art"
+                        class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="2">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="2">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="2">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="2">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="red winter/chibi/tinyvid_optimized_4_Cherino_(Hot_Spring)-chibi.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="2">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="red winter/art-l2d/Memorial_Lobby_Cherino_(Hotspring).mp4"
+                                    type="video/mp4">
+                            </video>
+                            <p class="video-caption">Cherino (Hot Spring) Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Red Winter</td>
+                        <td class="info-value">Support/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type explosive">Explosive</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type heavy">Heavy</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Special</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 3: Nodoka (Hot Spring) -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Nodoka (Hot Spring)</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="3">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="3">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="3">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="3">
+                    <img src="red winter/Nodoka_(Hot_Spring).png" alt="Nodoka (Hot Spring)" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="3">
+                    <img src="red winter/art-l2d/Nodoka(Hot Spring).jpeg" alt="Nodoka (Hot Spring) Art"
+                        class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="3">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="3">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="3">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="3">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="red winter/chibi/tinyvid_optimized_3_Nodoka_(Hot_Spring)-chibi.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="3">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="red winter/art-l2d/Memorial_Lobby_Nodoka_(Hot_Spring).mp4"
+                                    type="video/mp4">
+                            </video>
+                            <p class="video-caption">Nodoka (Hot_Spring) Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Red Winter</td>
+                        <td class="info-value">Healer/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type explosive">Explosive</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type special">Special</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Special</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 4: Marina (Qipao) -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Marina (Qipao)</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="4">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="4">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="4">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="4">
+                    <img src="red winter/Marina_(Qipao).png" alt="Marina (Qipao)" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="4">
+                    <img src="red winter/art-l2d/Marina_(Qipao).jpg" alt="Marina (Qipao) Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="4">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="4">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="4">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="4">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="red winter/chibi/tinyvid_optimized_2_Marina_(Qipao)-chibi.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="4">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="red winter/art-l2d/Memorial_Lobby_Marina_(Qipao).mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Marina Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Red Winter</td>
+                        <td class="info-value">Attacker/Front</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type piercing">Penetration</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type heavy">Heavy</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 5: Takane -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Takane my istri</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="5">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="5">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="5">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="5">
+                    <img src="red winter/Takane.png" alt="Takane" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="5">
+                    <img src="red winter/art-l2d/Miyoshi Takane.jpeg" alt="Takane Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="5">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="5">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="5">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="5">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="red winter/chibi/tinyvid_optimized_1_Takane-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="5">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="red winter/art-l2d/Takane_Live2D.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Inilah sosok istriku </p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Red Winter</td>
+                        <td class="info-value">Healer/Middle</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Damage Type</td>
+                        <td class="damage-type mystic">Mystic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type light">Light</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="school-footer">
+        <div class="footer-content">
+            <p class="footer-school">RED WINTER FEDERAL ACADEMY</p>
+            <p class="footer-title">Character - Blue Archive</p>
+            <p class="footer-copyright">© 2025 Alwi Sihabudin. izin kepada ©Nexon Games, Yostar.</p>
+        </div>
+    </footer>
+
+    <script src="wishlist-script.js"></script>
+    <script src="school-script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arius Squad - Blue Archive</title>
+    <link rel="icon" href="gambar/logo blue archive.jpeg" type="image/jpeg">
+    <style>
+        :root {
+            --school-color: #a855f7;
+            /* Purple untuk Arius */
+        }
+    </style>
+    <link rel="stylesheet" href="wishlist-style.css">
+    <link rel="stylesheet" href="school-style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="school-header">
+        <div class="header-container">
+            <h1 class="school-title">ARIUS</h1>
+            <div class="header-actions">
+                <button class="sidebar-toggle" id="sidebarToggle">☰</button>
+                <a href="index.html" class="back-btn">← Kembali ke Lobby</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar-menu" id="sidebarMenu">
+        <div class="sidebar-header">
+            <div class="sidebar-brand">BLUE ARCHIVE</div>
+            <button class="sidebar-close" id="sidebarClose">✕</button>
+        </div>
+        <nav class="sidebar-nav">
+            <div class="sidebar-link-wrapper">
+                <a href="index.html" class="sidebar-link">
+                    <span class="sidebar-icon">🏠</span>
+                    <span class="sidebar-text">Home</span>
+                </a>
+            </div>
+            <div class="sidebar-link-wrapper">
+                <a href="index.html#sekolah" class="sidebar-link">
+                    <span class="sidebar-icon">🏫</span>
+                    <span class="sidebar-text">Sekolah</span>
+                </a>
+            </div>
+            <div class="sidebar-link-wrapper">
+                <a href="quiz.html" class="sidebar-link">
+                    <span class="sidebar-icon">💫</span>
+                    <span class="sidebar-text">Quiz</span>
+                </a>
+            </div>
+            <div class="sidebar-link-wrapper">
+                <a href="my-favorites.html" class="sidebar-link">
+                    <span class="sidebar-icon">📸</span>
+                    <span class="sidebar-text">Favorites</span>
+                </a>
+            </div>
+            <div class="sidebar-link-wrapper">
+                <a href="contact.html" class="sidebar-link">
+                    <span class="sidebar-icon">✉️</span>
+                    <span class="sidebar-text">Contact</span>
+                </a>
+            </div>
+        </nav>
+        <div class="sidebar-footer">
+            <p class="sidebar-school">ARISU</p>
+        </div>
+    </div>
+
+    <!-- Sidebar Overlay (background gelap) -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- School Info Section -->
+    <section class="school-info-section">
+        <div class="info-container">
+            <div class="school-logo">
+                <img src="gambar/arisu.jpg" alt="Arius Logo">
+            </div>
+            <div class="school-description">
+                <h3 class="subtitle">/// SQUAD</h3>
+                <h2 class="school-name">ARIUS</h2>
+                <p class="description-text">
+                    Arius Squad adalah kelompok misterius yang beroperasi di balik bayangan Kivotos.
+                    Mereka memiliki agenda dan tujuan tersembunyi yang tidak diketahui banyak orang.
+                    Anggota Arius dikenal dengan kemampuan tempur yang sangat tinggi dan taktik yang tidak terduga.
+                    Meskipun kontroversial, mereka memiliki keyakinan kuat terhadap misi mereka dan siap melakukan
+                    apapun
+                    untuk mencapai tujuan yang mereka yakini benar.
+                </p>
+                <div class="stats-boxes">
+                    <div class="stat-box">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Total Siswa</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Strikers</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Special</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Students Grid Section -->
+    <section class="students-section">
+        <div class="students-container">
+            <!-- Student 1: Misaki -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Misaki</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="1">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="1">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="1">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="1">
+                    <img src="arius/Misaki.png" alt="Misaki" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="1">
+                    <img src="arius/art-l2d/misaki-art.jpeg" alt="Misaki Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="1">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="1">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="1">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="1">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="arius/chibi/tinyvid_optimized_3_Misaki-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="1">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="arius/art-l2d/Memorial_Lobby_Misaki.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Misaki Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Arius</td>
+                        <td class="info-value">Attacker/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Attack Type</td>
+                        <td class="damage-type explosive">Explosive</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type special">Special</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 2: Misaki (Swimsuit) -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Misaki (Swimsuit)</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="2">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="2">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="2">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="2">
+                    <img src="arius/Misaki_(Swimsuit).png" alt="Misaki (Swimsuit)" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="2">
+                    <img src="arius/art-l2d/misaki_swimsuit-art.jpeg" alt="Misaki (Swimsuit) Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="2">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="2">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="2">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="2">
+                        <img src="arius/chibi/Misaki_Swimsuit-chibi.png" alt="Misaki (Swimsuit) Chibi"
+                            class="character-image chibi">
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="2">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="arius/art-l2d/Memorial_Lobby_Misaki_(Swimsuit).mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Misaki (Swimsuit) Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Arius</td>
+                        <td class="info-value">Attacker/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Attack Type</td>
+                        <td class="damage-type explosive">Explosive</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type special">Special</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Special</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 3: Saori (Dress) -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Saori (Dress)</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="3">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="3">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="3">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="3">
+                    <img src="arius/Saori_(Dress).png" alt="Saori (Dress)" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="3">
+                    <img src="arius/art-l2d/Saori_dress-art.jpeg" alt="Saori (Dress) Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="3">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="3">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="3">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="3">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="arius/chibi/Saori_(Dress)-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="3">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="arius/art-l2d/Memorial_Lobby_Saori_(Dress).mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Saori (Dress) Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Arius</td>
+                        <td class="info-value">Attacker/Middle</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Attack Type</td>
+                        <td class="damage-type sonic">Sonic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type light">Light</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 4: Saori (Swimsuit) -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Saori (Swimsuit)</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="4">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="4">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="4">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="4">
+                    <img src="arius/Saori_(Swimsuit).png" alt="Saori (Swimsuit)" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="4">
+                    <img src="arius/art-l2d/saori swimsuit-art.jpeg" alt="Saori (Swimsuit) Art" class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="4">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="4">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="4">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="4">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="arius/chibi/tinyvid_optimized_2_Saori_(Swimsuit)-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="4">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="arius/art-l2d/Memorial_Lobby_Saori_(Swimsuit).mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Saori (Swimsuit) Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Arius</td>
+                        <td class="info-value">Attacker/Middle</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Attack Type</td>
+                        <td class="damage-type mystic">Mystic</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type heavy">Heavy</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Student 5: Hiyori (Swimsuit) -->
+            <div class="student-card">
+                <header class="student-header">
+                    <h2>Hiyori (Swimsuit)</h2>
+                </header>
+                <div class="star-rating"><span class="star">⭐</span><span class="star">⭐</span><span
+                        class="star">⭐</span></div>
+                <nav class="tab-menu">
+                    <button class="tab-btn active" data-tab="profile" data-student="5">Profile Image</button>
+                    <button class="tab-btn" data-tab="artwork" data-student="5">Artwork</button>
+                    <button class="tab-btn" data-tab="other" data-student="5">Other</button>
+                </nav>
+                <div class="tab-content active" data-content="profile" data-student="5">
+                    <img src="arius/Hiyori_(Swimsuit).png" alt="Hiyori (Swimsuit)" class="character-image">
+                </div>
+                <div class="tab-content" data-content="artwork" data-student="5">
+                    <img src="arius/art-l2d/Tsuchinaga Hiyori (Swimsuit)-art.jpeg" alt="Hiyori (Swimsuit) Art"
+                        class="artwork-image">
+                </div>
+                <div class="tab-content" data-content="other" data-student="5">
+                    <div class="sub-tab-menu">
+                        <button class="sub-tab-btn active" data-subtab="chibi" data-student="5">Chibi</button>
+                        <button class="sub-tab-btn" data-subtab="live2d" data-student="5">Live2D</button>
+                    </div>
+                    <div class="sub-tab-content active" data-subcontent="chibi" data-student="5">
+                        <video class="character-video" autoplay muted loop playsinline>
+                            <source src="arius/chibi/tinyvid_optimized_1_Hiyori_(Swimsuit)-chibi.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="sub-tab-content" data-subcontent="live2d" data-student="5">
+                        <div class="video-container">
+                            <video class="character-video" autoplay muted loop playsinline>
+                                <source src="arius/art-l2d/Memorial_Lobby_Hiyori_(Swimsuit).mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">Hiyori (Swimsuit) Live2D</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-label">School</td>
+                        <td class="info-label">Role</td>
+                    </tr>
+                    <tr>
+                        <td class="info-value">Arius</td>
+                        <td class="info-value">Attacker/Back</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Attack Type</td>
+                        <td class="damage-type piercing">Penetration</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Armor Type</td>
+                        <td class="armor-type heavy">Heavy</td>
+                    </tr>
+                    <tr>
+                        <td class="info-label">Combat Class</td>
+                        <td class="info-value">Striker</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="school-footer">
+        <div class="footer-content">
+            <p class="footer-school">ARIUS SQUAD</p>
+            <p class="footer-title">Character - Blue Archive</p>
+            <p class="footer-copyright">© 2025 Alwi Sihabudin. izin kepada ©Nexon Games, Yostar.</p>
+        </div>
+    </footer>
+
+    <script src="wishlist-script.js"></script>
+    <script src="school-script.js"></script>
+</body>
+
+</html>

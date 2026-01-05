@@ -1,0 +1,804 @@
+/* ===== UNIVERSAL CSS FOR ALL SCHOOLS ===== */
+/* Warna sekolah di-set lewat CSS variable di masing-masing HTML */
+
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ===== HEADER ===== */
+.school-header {
+    background: rgba(0, 0, 0, 0.95);
+    border-bottom: 2px solid var(--school-color);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    transition: box-shadow 0.3s ease;
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.school-title {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: var(--school-color);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+    background: transparent;
+    border: 2px solid var(--school-color);
+    color: var(--school-color);
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-toggle:hover {
+    background: var(--school-color);
+    color: #000;
+    transform: scale(1.05);
+}
+
+.back-btn {
+    background: transparent;
+    border: 2px solid var(--school-color);
+    color: var(--school-color);
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: var(--school-color);
+    color: #000;
+    transform: translateX(-5px);
+}
+
+/* ===== SIDEBAR MENU ===== */
+.sidebar-menu {
+    position: fixed;
+    top: 0;
+    left: -320px;
+    width: 300px;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.98), rgba(0, 0, 0, 0.98));
+    border-right: 2px solid var(--school-color);
+    z-index: 1001;
+    transition: left 0.4s ease;
+    overflow-y: auto;
+    box-shadow: 5px 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar-menu.active {
+    left: 0;
+}
+
+.sidebar-header {
+    padding: 25px 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-brand {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, var(--school-color), #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.sidebar-close {
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid var(--school-color);
+    border-radius: 50%;
+    color: var(--school-color);
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-close:hover {
+    background: var(--school-color);
+    color: #000;
+    transform: rotate(90deg);
+}
+
+/* ===== SIDEBAR NAVIGATION ===== */
+.sidebar-nav {
+    padding: 20px 0;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 25px;
+    text-decoration: none;
+    color: #9ca3af;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-link:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--school-color);
+    border-left-color: var(--school-color);
+    padding-left: 30px;
+}
+
+.sidebar-icon {
+    font-size: 22px;
+}
+
+.sidebar-text {
+    flex: 1;
+}
+
+/* ===== SIDEBAR FOOTER ===== */
+.sidebar-footer {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-school {
+    font-size: 12px;
+    color: var(--school-color);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* ===== SIDEBAR OVERLAY (Background gelap) ===== */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.sidebar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .school-title {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    
+    .sidebar-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    .back-btn {
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+    
+    .sidebar-menu {
+        width: 280px;
+        left: -300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .school-title {
+        font-size: 16px;
+    }
+    
+    .header-actions {
+        gap: 10px;
+    }
+    
+    .sidebar-toggle {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+    
+    .back-btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    
+    .sidebar-menu {
+        width: 260px;
+        left: -280px;
+    }
+    
+    .sidebar-link {
+        font-size: 14px;
+        padding: 15px 20px;
+    }
+}
+
+/* ===== SCHOOL INFO SECTION ===== */
+.school-info-section {
+    padding: 60px 30px;
+    background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.02));
+}
+
+.info-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.school-logo {
+    flex-shrink: 0;
+}
+
+.school-logo img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    border: 3px solid var(--school-color);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.school-logo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px var(--school-color);
+}
+
+.school-description {
+    flex: 1;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: var(--school-color);
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.school-name {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    color: var(--school-color);
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.description-text {
+    font-size: 16px;
+    color: #9ca3af;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.stats-boxes {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid var(--school-color);
+    border-radius: 12px;
+    padding: 20px 30px;
+    text-align: center;
+    min-width: 140px;
+    transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px var(--school-color);
+}
+
+.stat-number {
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--school-color);
+}
+
+.stat-label {
+    font-size: 13px;
+    color: #9ca3af;
+    letter-spacing: 1px;
+}
+
+/* ===== STUDENTS SECTION ===== */
+.students-section {
+    padding: 60px 30px;
+}
+
+.students-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 40px;
+}
+
+/* ===== STUDENT CARD ===== */
+.student-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+.student-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--school-color);
+    box-shadow: 0 0 40px var(--school-color);
+}
+
+.student-header {
+    background: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.student-header h2 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--school-color);
+}
+
+/* ===== STAR RATING ===== */
+.star-rating {
+    text-align: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.star {
+    font-size: 24px;
+    margin: 0 3px;
+}
+
+/* ===== TAB MENU ===== */
+.tab-menu {
+    display: flex;
+    background: #0a0a0a;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.tab-btn.active {
+    color: var(--school-color);
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 3px solid var(--school-color);
+}
+
+.tab-btn:hover {
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--school-color);
+}
+
+/* ===== TAB CONTENT ===== */
+.tab-content {
+    display: none;
+    min-height: 300px;
+    padding: 25px;
+    text-align: center;
+    animation: fadeIn 0.4s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.character-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* Artwork image dengan ukuran fixed */
+.artwork-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Live2D image dengan ukuran fixed */
+.live2d-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.character-image:hover {
+    transform: scale(1.02);
+}
+
+.character-image.chibi {
+    max-width: 280px;
+}
+
+/* ===== SUB TAB MENU ===== */
+.sub-tab-menu {
+    display: flex;
+    margin-bottom: 25px;
+    gap: 15px;
+    justify-content: center;
+}
+
+.sub-tab-btn {
+    padding: 10px 25px;
+    border: 2px solid var(--school-color);
+    background: transparent;
+    color: var(--school-color);
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.sub-tab-btn.active {
+    background: var(--school-color);
+    color: #000000;
+}
+
+.sub-tab-btn:hover {
+    background: var(--school-color);
+    color: #000000;
+    transform: translateY(-2px);
+}
+
+.sub-tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.sub-tab-content.active {
+    display: block;
+}
+
+/* ===== VIDEO CONTAINER ===== */
+.video-container {
+    margin-bottom: 20px;
+}
+
+/* ===== VIDEO STYLING UNTUK CHIBI (TANPA KONTROL) ===== */
+.character-video {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 12px;
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/* Sembunyikan kontrol video untuk Chrome/Safari/Edge */
+.character-video::-webkit-media-controls {
+    display: none !important;
+}
+
+.character-video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+.character-video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+.character-video::-webkit-media-controls-play-button {
+    display: none !important;
+}
+
+.character-video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+}
+
+/* Sembunyikan kontrol video untuk Firefox */
+.character-video::-moz-media-controls {
+    display: none !important;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.video-caption {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #9ca3af;
+    font-weight: 500;
+}
+
+/* ===== INFO TABLE ===== */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #0a0a0a;
+}
+
+.info-table tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-table tr:last-child {
+    border-bottom: none;
+}
+
+.info-table td {
+    padding: 18px;
+    text-align: center;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+.info-label {
+    background: rgba(255, 255, 255, 0.05);
+    font-weight: 700;
+    color: var(--school-color);
+    letter-spacing: 1px;
+}
+
+.info-value {
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+/* ===== DAMAGE & ARMOR TYPES ===== */
+.damage-type,
+.armor-type {
+    font-weight: 700;
+    color: #000000;
+    padding: 8px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+}
+
+.damage-type.explosive {
+    background: #ef4444;
+}
+
+.damage-type.piercing {
+    background: #eab308;
+}
+
+.damage-type.mystic {
+    background: #3b82f6;
+}
+
+.damage-type.sonic {
+    background: #a855f7;
+}
+
+.armor-type.light {
+    background: #ef4444;
+}
+
+.armor-type.heavy {
+    background: #eab308;
+}
+
+.armor-type.special {
+    background: #3b82f6;
+}
+
+.armor-type.elastic {
+    background: #a855f7;
+}
+
+/* ===== FOOTER ===== */
+.school-footer {
+    background: rgba(0, 0, 0, 0.9);
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-school {
+    font-size: 14px;
+    color: var(--school-color);
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.footer-title {
+    font-size: 13px;
+    color: #9ca3af;
+    margin-bottom: 8px;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    color: rgba(156, 163, 175, 0.6);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+    .students-container {
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .school-title {
+        font-size: 22px;
+    }
+
+    .info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .school-logo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .school-name {
+        font-size: 36px;
+    }
+
+    .stats-boxes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .students-container {
+        grid-template-columns: 1fr;
+    }
+
+    .tab-btn {
+        font-size: 12px;
+        padding: 12px 8px;
+    }
+
+    .live2d-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .school-title {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .back-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    .school-name {
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+
+    .stat-number {
+        font-size: 32px;
+    }
+
+    .student-header h2 {
+        font-size: 22px;
+    }
+
+    .live2d-image {
+        height: 250px;
+    }
+}

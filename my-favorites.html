@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorites - Blue Archive</title>
+    <link rel="icon" href="gambar/logo blue archive.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="ba-style.css">
+    <link rel="stylesheet" href="wishlist-style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="brand">BLUE ARCHIVE</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="my-favorites.html" class="active">My Favorites</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="live-clock" id="liveClock">00:00:00</div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="favorites-hero">
+        <div class="container">
+            <h1 class="favorites-title">MY FAVORITE STUDENTS</h1>
+            <p class="favorites-subtitle">Koleksi karakter favoritmu dari Kivotos Academy</p>
+            <div class="favorites-stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalFavorites">0</span>
+                    <span class="stat-label">Total Favorites</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="totalSchools">0</span>
+                    <span class="stat-label">Schools</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section container">
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Abydos">Abydos</button>
+            <button class="filter-btn" data-filter="Gehenna">Gehenna</button>
+            <button class="filter-btn" data-filter="Millennium">Millennium</button>
+            <button class="filter-btn" data-filter="Trinity">Trinity</button>
+            <button class="filter-btn" data-filter="Hyakkiyako">Hyakkiyako</button>
+            <button class="filter-btn" data-filter="Other">Other</button>
+        </div>
+
+        <div class="action-buttons">
+            <button class="action-btn" id="exportBtn">
+                <span>📥</span> Export List
+            </button>
+            <button class="action-btn danger" id="clearAllBtn">
+                <span>🗑️</span> Clear All
+            </button>
+        </div>
+    </section>
+
+    <!-- Favorites Grid -->
+    <section class="favorites-section container">
+        <div id="favoritesGrid" class="favorites-grid">
+            <!-- Favorites akan muncul di sini -->
+        </div>
+
+        <!-- Empty State -->
+        <div id="emptyState" class="empty-state">
+            <div class="empty-icon">💔</div>
+            <h3>Belum Ada Favorit</h3>
+            <p>Tambahkan karakter favoritmu dengan klik tombol ❤️ di halaman sekolah</p>
+            <a href="index.html#sekolah" class="empty-btn">Jelajahi Sekolah</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="community-footer">
+                        <div class="community-title-small">FOLLOW PEMBUAT</div>
+                        <div class="community-icons-small">
+                            <a href="https://www.instagram.com/void_lagon?igsh=ZDZpZnUyb3M2dG0z" class="icon-small"
+                                title="Instagram">📷</a>
+                            <a href="https://www.tiktok.com/@futukonoru?_r=1&_t=ZS-92ckFTO1RCL" class="icon-small"
+                                title="TikTok">🦅</a>
+                            <a href="https://discord.gg/xuAMCDW7" class="icon-small" title="Discord">💬</a>
+                            <a href="https://bluearchive.nexon.com/home" class="icon-small" title="Blue archive">🔺</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p>© 2025 Alwi Sihabudin/251011700789-01SIFP014</p>
+                    <p class="footer-note">Blue Archive ©Nexon Games, Yostar. izin hanya buat tugas UAS.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="ba-script.js"></script>
+    <script src="wishlist-script.js"></script>
+</body>
+
+</html>
